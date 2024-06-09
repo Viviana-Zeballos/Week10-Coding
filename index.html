@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Tracker</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+</head>
+<body class="container bg-info">
+    <br>
+    <div class="text-center text-decoration-underline">
+        <h2>Assignment Tracker</h2>
+    </div>
+    <div class="text-center">
+        <p>This assignment tracker is designed for students who would like to keep track of their assignment deadlines.</p>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="course">Course</label>
+                        <input type="text" class="form-control" id="course" placeholder="Course">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="assignment">Assignment</label>
+                        <input type="text" class="form-control" id="assignment" placeholder="Assignment">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="hours">Hours</label>
+                        <select class="form-control" id="hours">
+                            <option value=""disabled selected>Please select a time frame</option>
+                            <option value="0-2">0-2 hours</option>
+                            <option value="2-4">2-4 hours</option>
+                            <option value="4-6">4-6 hours</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="due-date">Due Date</label>
+                        <input type="date" class="form-control" id="due-date">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div>
+                <button id="add" class="btn btn-primary">Create</button>
+            </div>
+        </div>
+    </div> <br>
+    <table id="list" class="table table-dark table-striped">
+        <tr>
+            <th>Course</th>
+            <th>Assignment</th>
+            <th>Hours</th>
+            <th>Due Date</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+
+    <script src="todo.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
